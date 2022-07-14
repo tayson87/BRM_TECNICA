@@ -20,7 +20,7 @@ const {
   protectAccountOwner
 } = require('../middlewares/users.middleware');
 
-const router = express.Router();
+const router = express.Router()
 
 router.post('/', createUser);
 

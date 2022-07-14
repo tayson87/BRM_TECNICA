@@ -12,6 +12,10 @@ const Order = sequelize.define('order', {
     type: DataTypes.INTEGER,
     allowNull: false
   },
+  totalPrice: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
   cartId: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -21,11 +25,7 @@ const Order = sequelize.define('order', {
     type: DataTypes.STRING(255),
     allowNull: false
   },
-  totalPrice: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  status: {
+    status: {
     type: DataTypes.STRING(10),
     allowNull: false,
     defaultValue: 'active'
