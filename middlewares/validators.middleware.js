@@ -28,8 +28,6 @@ exports.createProductValidators = [
     .withMessage('insert price please')
 ];
 
-// END: Movies validators
-
 exports.addProductToCartValidation = [
   body('productId')
     .isNumeric()
